@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct TreatsListView: View {
+    @StateObject var viewModel = TreatsListViewModel()
+    
     var body: some View {
         NavigationView {
-            List(MockData.treats) { treat in
+            List(viewModel.treats) { treat in
                 TreatListCell(treat: treat)
             }
             .navigationTitle("🥞 treats.")
+        }
+        .onAppear {
+            viewModel.getTreats()
         }
     }
 }

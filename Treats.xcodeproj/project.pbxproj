@@ -11,6 +11,7 @@
 		2D91C20428B4997D008D688A /* TreatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91C20328B4997D008D688A /* TreatListCell.swift */; };
 		2D91C20628B4A748008D688A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91C20528B4A748008D688A /* NetworkManager.swift */; };
 		2D91C20828B4A988008D688A /* TRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91C20728B4A988008D688A /* TRError.swift */; };
+		2D91C20A28B4DACF008D688A /* TreatsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91C20928B4DACF008D688A /* TreatsListViewModel.swift */; };
 		2DB8501028B37663009C58CE /* TreatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8500F28B37663009C58CE /* TreatsApp.swift */; };
 		2DB8501228B37663009C58CE /* TreatsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8501128B37663009C58CE /* TreatsTabView.swift */; };
 		2DB8501428B37667009C58CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DB8501328B37667009C58CE /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		2D91C20328B4997D008D688A /* TreatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatListCell.swift; sourceTree = "<group>"; };
 		2D91C20528B4A748008D688A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2D91C20728B4A988008D688A /* TRError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRError.swift; sourceTree = "<group>"; };
+		2D91C20928B4DACF008D688A /* TreatsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatsListViewModel.swift; sourceTree = "<group>"; };
 		2DB8500C28B37663009C58CE /* Treats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Treats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DB8500F28B37663009C58CE /* TreatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatsApp.swift; sourceTree = "<group>"; };
 		2DB8501128B37663009C58CE /* TreatsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatsTabView.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				2DB8500F28B37663009C58CE /* TreatsApp.swift */,
 				2DB8501128B37663009C58CE /* TreatsTabView.swift */,
 				2DB8501D28B3774F009C58CE /* TreatsListView.swift */,
+				2D91C20928B4DACF008D688A /* TreatsListViewModel.swift */,
 				2DB8501F28B37760009C58CE /* AccountView.swift */,
 				2DB8502128B37772009C58CE /* OrderView.swift */,
 				2D91C20328B4997D008D688A /* TreatListCell.swift */,
@@ -163,6 +166,7 @@
 				2DB8501228B37663009C58CE /* TreatsTabView.swift in Sources */,
 				2D91C20828B4A988008D688A /* TRError.swift in Sources */,
 				2DB8501E28B3774F009C58CE /* TreatsListView.swift in Sources */,
+				2D91C20A28B4DACF008D688A /* TreatsListViewModel.swift in Sources */,
 				2D91C20628B4A748008D688A /* NetworkManager.swift in Sources */,
 				2D91C20428B4997D008D688A /* TreatListCell.swift in Sources */,
 				2DB8501028B37663009C58CE /* TreatsApp.swift in Sources */,
