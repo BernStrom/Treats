@@ -8,13 +8,30 @@
 import SwiftUI
 
 struct TreatListCell: View {
+    let treat: Treat
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack(spacing: 20) {
+            Image("asian-flank-steak")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 120, height: 90)
+                .cornerRadius(8)
+            
+            VStack(alignment: .leading, spacing: 5) {
+                Text(treat.name)
+                    .font(.title2.weight(.medium))
+                
+                Text("$\(treat.price, specifier: "%.2f")")
+                    .foregroundColor(.secondary)
+                    .fontWeight(.semibold)
+            }
+        }
     }
 }
 
 struct TreatListCell_Previews: PreviewProvider {
     static var previews: some View {
-        TreatListCell()
+        TreatListCell(treat: MockData.sampleTreat)
     }
 }

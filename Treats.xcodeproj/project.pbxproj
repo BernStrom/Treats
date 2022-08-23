@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D91C20228B48C6F008D688A /* Treat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91C20128B48C6F008D688A /* Treat.swift */; };
+		2D91C20428B4997D008D688A /* TreatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91C20328B4997D008D688A /* TreatListCell.swift */; };
 		2DB8501028B37663009C58CE /* TreatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8500F28B37663009C58CE /* TreatsApp.swift */; };
 		2DB8501228B37663009C58CE /* TreatsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8501128B37663009C58CE /* TreatsTabView.swift */; };
 		2DB8501428B37667009C58CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DB8501328B37667009C58CE /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		2D91C20128B48C6F008D688A /* Treat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treat.swift; sourceTree = "<group>"; };
+		2D91C20328B4997D008D688A /* TreatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatListCell.swift; sourceTree = "<group>"; };
 		2DB8500C28B37663009C58CE /* Treats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Treats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DB8500F28B37663009C58CE /* TreatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatsApp.swift; sourceTree = "<group>"; };
 		2DB8501128B37663009C58CE /* TreatsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatsTabView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				2DB8501D28B3774F009C58CE /* TreatsListView.swift */,
 				2DB8501F28B37760009C58CE /* AccountView.swift */,
 				2DB8502128B37772009C58CE /* OrderView.swift */,
+				2D91C20328B4997D008D688A /* TreatListCell.swift */,
 				2D91C20128B48C6F008D688A /* Treat.swift */,
 				2DB8501328B37667009C58CE /* Assets.xcassets */,
 				2DB8501528B37667009C58CE /* Preview Content */,
@@ -153,6 +156,7 @@
 				2DB8502028B37760009C58CE /* AccountView.swift in Sources */,
 				2DB8501228B37663009C58CE /* TreatsTabView.swift in Sources */,
 				2DB8501E28B3774F009C58CE /* TreatsListView.swift in Sources */,
+				2D91C20428B4997D008D688A /* TreatListCell.swift in Sources */,
 				2DB8501028B37663009C58CE /* TreatsApp.swift in Sources */,
 				2DB8502228B37772009C58CE /* OrderView.swift in Sources */,
 			);

@@ -10,8 +10,10 @@ import SwiftUI
 struct TreatsListView: View {
     var body: some View {
         NavigationView {
-            Text("Treats List View")
-                .navigationTitle("🥞 Treats")
+            List(MockData.treats) { treat in
+                TreatListCell(treat: treat)
+            }
+            .navigationTitle("🥞 treats.")
         }
     }
 }
