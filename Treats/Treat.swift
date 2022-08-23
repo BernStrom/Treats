@@ -18,7 +18,7 @@ struct Treat: Decodable, Identifiable {
     let carbs: Int
 }
 
-struct TreatResponse {
+struct TreatResponse: Decodable {
     let request: [Treat]
 }
 
