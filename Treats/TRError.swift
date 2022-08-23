@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+enum TRError: Error {
+    case invalidURL
+    case invalidResponse
+    case invalidData
+    case unableToComplete
+}
