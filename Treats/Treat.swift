@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Treat: Decodable {
+struct Treat: Decodable, Identifiable {
     let id: Int
     let name: String
     let description: String
