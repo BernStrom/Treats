@@ -9,15 +9,29 @@ import Foundation
 
 final class TreatsListViewModel: ObservableObject {
     @Published var treats = [Treat]()
+    @Published var alertItem: AlertItem?
     
     func getTreats() {
-        NetworkManager.shared.getTreats { result in
+        NetworkManager.shared.getTreats { [self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let treats):
                     self.treats = treats
+                    
                 case .failure(let error):
-                    print(error.localizedDescription)
+                    switch error {
+                    case .invalidURL:
+                        alertItem = AlertContext.invalidURL
+                        
+                    case .invalidResponse:
+                        alertItem = AlertContext.invalidResponse
+                        
+                    case .invalidData:
+                        alertItem = AlertContext.invalidData
+                        
+                    case .unableToComplete:
+                        alertItem = AlertContext.unableToComplete
+                    }
                 }
             }
         }
