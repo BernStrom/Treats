@@ -10,10 +10,15 @@ import Foundation
 final class TreatsListViewModel: ObservableObject {
     @Published var treats = [Treat]()
     @Published var alertItem: AlertItem?
+    @Published var isLoading = false
     
     func getTreats() {
+        isLoading = true
+        
         NetworkManager.shared.getTreats { [self] result in
             DispatchQueue.main.async {
+                isLoading = false
+                
                 switch result {
                 case .success(let treats):
                     self.treats = treats

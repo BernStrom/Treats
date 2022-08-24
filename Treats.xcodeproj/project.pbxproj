@@ -20,6 +20,7 @@
 		2DB8502028B37760009C58CE /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8501F28B37760009C58CE /* AccountView.swift */; };
 		2DB8502228B37772009C58CE /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8502128B37772009C58CE /* OrderView.swift */; };
 		2DF4956D28B5D7330005728B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4956C28B5D7330005728B /* Alert.swift */; };
+		2DF4957128B5E9760005728B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4957028B5E9760005728B /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		2DB8501F28B37760009C58CE /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		2DB8502128B37772009C58CE /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		2DF4956C28B5D7330005728B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		2DF4957028B5E9760005728B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				2D91C20928B4DACF008D688A /* TreatsListViewModel.swift */,
 				2DB8501F28B37760009C58CE /* AccountView.swift */,
 				2DB8502128B37772009C58CE /* OrderView.swift */,
+				2DF4957028B5E9760005728B /* LoadingView.swift */,
 				2D91C20328B4997D008D688A /* TreatListCell.swift */,
 				2D91C20128B48C6F008D688A /* Treat.swift */,
 				2D91C20528B4A748008D688A /* NetworkManager.swift */,
@@ -169,6 +172,7 @@
 				2DB8501228B37663009C58CE /* TreatsTabView.swift in Sources */,
 				2D91C20828B4A988008D688A /* TRError.swift in Sources */,
 				2DB8501E28B3774F009C58CE /* TreatsListView.swift in Sources */,
+				2DF4957128B5E9760005728B /* LoadingView.swift in Sources */,
 				2D91C20A28B4DACF008D688A /* TreatsListViewModel.swift in Sources */,
 				2D91C20628B4A748008D688A /* NetworkManager.swift in Sources */,
 				2D91C20428B4997D008D688A /* TreatListCell.swift in Sources */,
