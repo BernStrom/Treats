@@ -12,8 +12,7 @@ struct TreatListCell: View {
     
     var body: some View {
         HStack(spacing: 20) {
-            Image("asian-flank-steak")
-                .resizable()
+            TreatRemoteImage(urlString: treat.imageURL)
                 .scaledToFit()
                 .frame(width: 120, height: 90)
                 .cornerRadius(8)
