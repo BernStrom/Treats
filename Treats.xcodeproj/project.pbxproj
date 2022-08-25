@@ -19,6 +19,7 @@
 		2DB8501E28B3774F009C58CE /* TreatsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8501D28B3774F009C58CE /* TreatsListView.swift */; };
 		2DB8502028B37760009C58CE /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8501F28B37760009C58CE /* AccountView.swift */; };
 		2DB8502228B37772009C58CE /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8502128B37772009C58CE /* OrderView.swift */; };
+		2DD8EE9B28B738E700FC7ECA /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD8EE9A28B738E700FC7ECA /* RemoteImage.swift */; };
 		2DF4956D28B5D7330005728B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4956C28B5D7330005728B /* Alert.swift */; };
 		2DF4957128B5E9760005728B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4957028B5E9760005728B /* LoadingView.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +38,7 @@
 		2DB8501D28B3774F009C58CE /* TreatsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatsListView.swift; sourceTree = "<group>"; };
 		2DB8501F28B37760009C58CE /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		2DB8502128B37772009C58CE /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		2DD8EE9A28B738E700FC7ECA /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		2DF4956C28B5D7330005728B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		2DF4957028B5E9760005728B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,18 +73,11 @@
 		2DB8500E28B37663009C58CE /* Treats */ = {
 			isa = PBXGroup;
 			children = (
+				2DD8EE9D28B7434500FC7ECA /* Model */,
+				2DD8EEA228B7447100FC7ECA /* Utilities */,
+				2DD8EE9E28B7436C00FC7ECA /* Views */,
+				2DD8EE9C28B7433B00FC7ECA /* Screens */,
 				2DB8500F28B37663009C58CE /* TreatsApp.swift */,
-				2DB8501128B37663009C58CE /* TreatsTabView.swift */,
-				2DB8501D28B3774F009C58CE /* TreatsListView.swift */,
-				2D91C20928B4DACF008D688A /* TreatsListViewModel.swift */,
-				2DB8501F28B37760009C58CE /* AccountView.swift */,
-				2DB8502128B37772009C58CE /* OrderView.swift */,
-				2DF4957028B5E9760005728B /* LoadingView.swift */,
-				2D91C20328B4997D008D688A /* TreatListCell.swift */,
-				2D91C20128B48C6F008D688A /* Treat.swift */,
-				2D91C20528B4A748008D688A /* NetworkManager.swift */,
-				2D91C20728B4A988008D688A /* TRError.swift */,
-				2DF4956C28B5D7330005728B /* Alert.swift */,
 				2DB8501328B37667009C58CE /* Assets.xcassets */,
 				2DB8501528B37667009C58CE /* Preview Content */,
 			);
@@ -95,6 +90,110 @@
 				2DB8501628B37667009C58CE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2DD8EE9C28B7433B00FC7ECA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2DB8501128B37663009C58CE /* TreatsTabView.swift */,
+				2DD8EE9F28B7438700FC7ECA /* TreatListView */,
+				2DD8EEA028B743A700FC7ECA /* AccountView */,
+				2DD8EEA128B743B300FC7ECA /* OrderView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		2DD8EE9D28B7434500FC7ECA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D91C20128B48C6F008D688A /* Treat.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2DD8EE9E28B7436C00FC7ECA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2DD8EEA728B7464500FC7ECA /* Loader */,
+				2DD8EEA628B745E200FC7ECA /* Image */,
+				2DD8EEA528B745C800FC7ECA /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2DD8EE9F28B7438700FC7ECA /* TreatListView */ = {
+			isa = PBXGroup;
+			children = (
+				2D91C20928B4DACF008D688A /* TreatsListViewModel.swift */,
+				2DB8501D28B3774F009C58CE /* TreatsListView.swift */,
+			);
+			path = TreatListView;
+			sourceTree = "<group>";
+		};
+		2DD8EEA028B743A700FC7ECA /* AccountView */ = {
+			isa = PBXGroup;
+			children = (
+				2DB8501F28B37760009C58CE /* AccountView.swift */,
+			);
+			path = AccountView;
+			sourceTree = "<group>";
+		};
+		2DD8EEA128B743B300FC7ECA /* OrderView */ = {
+			isa = PBXGroup;
+			children = (
+				2DB8502128B37772009C58CE /* OrderView.swift */,
+			);
+			path = OrderView;
+			sourceTree = "<group>";
+		};
+		2DD8EEA228B7447100FC7ECA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2DD8EEA428B744B300FC7ECA /* Alerts */,
+				2DD8EEA328B7447A00FC7ECA /* Managers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2DD8EEA328B7447A00FC7ECA /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2D91C20528B4A748008D688A /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2DD8EEA428B744B300FC7ECA /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				2D91C20728B4A988008D688A /* TRError.swift */,
+				2DF4956C28B5D7330005728B /* Alert.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		2DD8EEA528B745C800FC7ECA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2D91C20328B4997D008D688A /* TreatListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2DD8EEA628B745E200FC7ECA /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				2DD8EE9A28B738E700FC7ECA /* RemoteImage.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		2DD8EEA728B7464500FC7ECA /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				2DF4957028B5E9760005728B /* LoadingView.swift */,
+			);
+			path = Loader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +272,7 @@
 				2D91C20828B4A988008D688A /* TRError.swift in Sources */,
 				2DB8501E28B3774F009C58CE /* TreatsListView.swift in Sources */,
 				2DF4957128B5E9760005728B /* LoadingView.swift in Sources */,
+				2DD8EE9B28B738E700FC7ECA /* RemoteImage.swift in Sources */,
 				2D91C20A28B4DACF008D688A /* TreatsListViewModel.swift in Sources */,
 				2D91C20628B4A748008D688A /* NetworkManager.swift in Sources */,
 				2D91C20428B4997D008D688A /* TreatListCell.swift in Sources */,
