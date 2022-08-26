@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D055DFD28B87C5700056808 /* TreatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D055DFC28B87C5700056808 /* TreatDetailView.swift */; };
 		2D91C20228B48C6F008D688A /* Treat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91C20128B48C6F008D688A /* Treat.swift */; };
 		2D91C20428B4997D008D688A /* TreatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91C20328B4997D008D688A /* TreatListCell.swift */; };
 		2D91C20628B4A748008D688A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91C20528B4A748008D688A /* NetworkManager.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D055DFC28B87C5700056808 /* TreatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatDetailView.swift; sourceTree = "<group>"; };
 		2D91C20128B48C6F008D688A /* Treat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treat.swift; sourceTree = "<group>"; };
 		2D91C20328B4997D008D688A /* TreatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatListCell.swift; sourceTree = "<group>"; };
 		2D91C20528B4A748008D688A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				2D91C20928B4DACF008D688A /* TreatsListViewModel.swift */,
 				2DB8501D28B3774F009C58CE /* TreatsListView.swift */,
+				2D055DFC28B87C5700056808 /* TreatDetailView.swift */,
 			);
 			path = TreatListView;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				2D91C20228B48C6F008D688A /* Treat.swift in Sources */,
 				2DB8502028B37760009C58CE /* AccountView.swift in Sources */,
+				2D055DFD28B87C5700056808 /* TreatDetailView.swift in Sources */,
 				2DB8501228B37663009C58CE /* TreatsTabView.swift in Sources */,
 				2D91C20828B4A988008D688A /* TRError.swift in Sources */,
 				2DB8501E28B3774F009C58CE /* TreatsListView.swift in Sources */,
