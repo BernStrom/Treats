@@ -9,11 +9,11 @@ import SwiftUI
 
 struct TreatDetailView: View {
     let treat: Treat
+    @Binding var isShowingDetailView: Bool
     
     var body: some View {
         VStack {
-            Image("asian-flank-steak")
-                .resizable()
+            TreatRemoteImage(urlString: treat.imageURL)
                 .scaledToFit()
                 .frame(width: 300, height: 225)
             
@@ -79,7 +79,7 @@ struct TreatDetailView: View {
         .shadow(radius: 40)
         .overlay(
             Button {
-                print("dismiss")
+                isShowingDetailView = false
             } label: {
                 ZStack {
                     Circle()
@@ -99,6 +99,6 @@ struct TreatDetailView: View {
 
 struct TreatDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        TreatDetailView(treat: MockData.sampleTreat)
+        TreatDetailView(treat: MockData.sampleTreat, isShowingDetailView: .constant(true))
     }
 }
