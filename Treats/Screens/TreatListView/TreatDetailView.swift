@@ -26,35 +26,9 @@ struct TreatDetailView: View {
                     .padding()
                 
                 HStack(spacing: 40) {
-                    VStack(spacing: 5) {
-                        Text("Calories")
-                            .font(.caption.bold())
-                        
-                        Text("\(treat.calories)")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
-                    
-                    VStack(spacing: 5) {
-                        Text("Carbs")
-                            .font(.caption.bold())
-                        
-                        Text("\(treat.carbs)")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
-                    
-                    VStack(spacing: 5) {
-                        Text("Protein")
-                            .font(.caption.bold())
-                        
-                        Text("\(treat.protein)")
-                            .foregroundColor(.secondary)
-                            .fontWeight(.semibold)
-                            .italic()
-                    }
+                    NutritionInfo(title: "Calories", value: treat.calories)
+                    NutritionInfo(title: "Carbs", value: treat.carbs)
+                    NutritionInfo(title: "Protein", value: treat.protein)
                 }
                 .padding()
             }
@@ -81,17 +55,7 @@ struct TreatDetailView: View {
             Button {
                 isShowingDetailView = false
             } label: {
-                ZStack {
-                    Circle()
-                        .frame(width: 30, height: 30)
-                        .foregroundStyle(.secondary)
-                        .opacity(0.6)
-                    
-                    Image(systemName: "xmark")
-                        .foregroundColor(Color(.label))
-                        .imageScale(.small)
-                        .frame(width: 44, height: 44)
-                }
+                XDismissButton()
             }, alignment: .topTrailing
         )
     }
@@ -100,5 +64,22 @@ struct TreatDetailView: View {
 struct TreatDetailView_Previews: PreviewProvider {
     static var previews: some View {
         TreatDetailView(treat: MockData.sampleTreat, isShowingDetailView: .constant(true))
+    }
+}
+
+struct NutritionInfo: View {
+    let title: String
+    let value: Int
+    
+    var body: some View {
+        VStack(spacing: 5) {
+            Text(title)
+                .font(.caption.bold())
+            
+            Text("\(value)")
+                .foregroundColor(.secondary)
+                .fontWeight(.semibold)
+                .italic()
+        }
     }
 }
