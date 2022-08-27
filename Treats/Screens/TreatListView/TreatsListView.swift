@@ -9,8 +9,6 @@ import SwiftUI
 
 struct TreatsListView: View {
     @StateObject var viewModel = TreatsListViewModel()
-    @State private var selectedTreat: Treat?
-    @State private var isShowingDetailView = false
     
     var body: some View {
         ZStack {
@@ -18,20 +16,23 @@ struct TreatsListView: View {
                 List(viewModel.treats) { treat in
                     TreatListCell(treat: treat)
                         .onTapGesture {
-                            selectedTreat = treat
-                            isShowingDetailView = true
+                            viewModel.selectedTreat = treat
+                            viewModel.isShowingDetailView = true
                         }
                 }
                 .navigationTitle("🥞 treats.")
-                .disabled(isShowingDetailView)
+                .disabled(viewModel.isShowingDetailView)
             }
             .onAppear {
                 viewModel.getTreats()
             }
-            .blur(radius: isShowingDetailView ? 20 : 0)
+            .blur(radius: viewModel.isShowingDetailView ? 20 : 0)
             
-            if isShowingDetailView {
-                TreatDetailView(treat: selectedTreat ?? MockData.sampleTreat, isShowingDetailView: $isShowingDetailView)
+            if viewModel.isShowingDetailView {
+                TreatDetailView(
+                    treat: viewModel.selectedTreat ?? MockData.sampleTreat,
+                    isShowingDetailView: $viewModel.isShowingDetailView
+                )
             }
             
             if viewModel.isLoading {

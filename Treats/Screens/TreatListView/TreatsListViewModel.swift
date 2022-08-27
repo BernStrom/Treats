@@ -11,6 +11,8 @@ final class TreatsListViewModel: ObservableObject {
     @Published var treats = [Treat]()
     @Published var alertItem: AlertItem?
     @Published var isLoading = false
+    @Published var selectedTreat: Treat?
+    @Published var isShowingDetailView = false
     
     func getTreats() {
         isLoading = true
