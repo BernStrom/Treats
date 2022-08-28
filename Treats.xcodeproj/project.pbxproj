@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2D055DFD28B87C5700056808 /* TreatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D055DFC28B87C5700056808 /* TreatDetailView.swift */; };
+		2D4AA1CB28BB51D5000F2E09 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4AA1CA28BB51D5000F2E09 /* AccountViewModel.swift */; };
+		2D4AA1CE28BB5784000F2E09 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4AA1CD28BB5784000F2E09 /* StringExt.swift */; };
 		2D91C20228B48C6F008D688A /* Treat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91C20128B48C6F008D688A /* Treat.swift */; };
 		2D91C20428B4997D008D688A /* TreatListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91C20328B4997D008D688A /* TreatListCell.swift */; };
 		2D91C20628B4A748008D688A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91C20528B4A748008D688A /* NetworkManager.swift */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		2D055DFC28B87C5700056808 /* TreatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatDetailView.swift; sourceTree = "<group>"; };
+		2D4AA1CA28BB51D5000F2E09 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		2D4AA1CD28BB5784000F2E09 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		2D91C20128B48C6F008D688A /* Treat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treat.swift; sourceTree = "<group>"; };
 		2D91C20328B4997D008D688A /* TreatListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatListCell.swift; sourceTree = "<group>"; };
 		2D91C20528B4A748008D688A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -58,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D4AA1CC28BB5752000F2E09 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2D4AA1CD28BB5784000F2E09 /* StringExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		2DB8500328B37663009C58CE = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +151,7 @@
 		2DD8EEA028B743A700FC7ECA /* AccountView */ = {
 			isa = PBXGroup;
 			children = (
+				2D4AA1CA28BB51D5000F2E09 /* AccountViewModel.swift */,
 				2DB8501F28B37760009C58CE /* AccountView.swift */,
 			);
 			path = AccountView;
@@ -155,6 +168,7 @@
 		2DD8EEA228B7447100FC7ECA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				2D4AA1CC28BB5752000F2E09 /* Extensions */,
 				2DD8EEA428B744B300FC7ECA /* Alerts */,
 				2DD8EEA328B7447A00FC7ECA /* Managers */,
 			);
@@ -290,6 +304,8 @@
 				2DD8EE9B28B738E700FC7ECA /* RemoteImage.swift in Sources */,
 				2D91C20A28B4DACF008D688A /* TreatsListViewModel.swift in Sources */,
 				2D91C20628B4A748008D688A /* NetworkManager.swift in Sources */,
+				2D4AA1CE28BB5784000F2E09 /* StringExt.swift in Sources */,
+				2D4AA1CB28BB51D5000F2E09 /* AccountViewModel.swift in Sources */,
 				2D91C20428B4997D008D688A /* TreatListCell.swift in Sources */,
 				2DF4956D28B5D7330005728B /* Alert.swift in Sources */,
 				2DB8501028B37663009C58CE /* TreatsApp.swift in Sources */,
