@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D055DFD28B87C5700056808 /* TreatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D055DFC28B87C5700056808 /* TreatDetailView.swift */; };
+		2D11D94128BC8AD60084B51F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D11D94028BC8AD60084B51F /* User.swift */; };
 		2D4AA1CB28BB51D5000F2E09 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4AA1CA28BB51D5000F2E09 /* AccountViewModel.swift */; };
 		2D4AA1CE28BB5784000F2E09 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4AA1CD28BB5784000F2E09 /* StringExt.swift */; };
 		2D91C20228B48C6F008D688A /* Treat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D91C20128B48C6F008D688A /* Treat.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		2D055DFC28B87C5700056808 /* TreatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatDetailView.swift; sourceTree = "<group>"; };
+		2D11D94028BC8AD60084B51F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2D4AA1CA28BB51D5000F2E09 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		2D4AA1CD28BB5784000F2E09 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		2D91C20128B48C6F008D688A /* Treat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treat.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				2D91C20128B48C6F008D688A /* Treat.swift */,
+				2D11D94028BC8AD60084B51F /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				2D4AA1CB28BB51D5000F2E09 /* AccountViewModel.swift in Sources */,
 				2D91C20428B4997D008D688A /* TreatListCell.swift in Sources */,
 				2DF4956D28B5D7330005728B /* Alert.swift in Sources */,
+				2D11D94128BC8AD60084B51F /* User.swift in Sources */,
 				2DB8501028B37663009C58CE /* TreatsApp.swift in Sources */,
 				2DB8502228B37772009C58CE /* OrderView.swift in Sources */,
 				2DEFC4B428B9D377006C236D /* XDismissButton.swift in Sources */,
