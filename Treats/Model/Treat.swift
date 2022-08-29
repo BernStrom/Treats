@@ -22,6 +22,8 @@ struct TreatResponse: Decodable {
     let request: [Treat]
 }
 
+//MARK: - MOCK DATA
+
 struct MockData {
     static let sampleTreat = Treat(
         id: 0001,
@@ -35,4 +37,39 @@ struct MockData {
     )
     
     static let treats = [sampleTreat, sampleTreat, sampleTreat, sampleTreat]
+    
+    static let orderItemOne = Treat(
+        id: 0001,
+        name: "Sample Treat 1",
+        description: "Description for the yummy sample treat 1.",
+        price: 9.99,
+        imageURL: "",
+        calories: 175,
+        protein: 50,
+        carbs: 15
+    )
+    
+    static let orderItemTwo = Treat(
+        id: 0002,
+        name: "Sample Treat 2",
+        description: "Description for the yummy sample treat 2.",
+        price: 19.99,
+        imageURL: "",
+        calories: 175,
+        protein: 50,
+        carbs: 15
+    )
+    
+    static let orderItemThree = Treat(
+        id: 0003,
+        name: "Sample Treat 3",
+        description: "Description for the yummy sample treat 3.",
+        price: 29.99,
+        imageURL: "",
+        calories: 175,
+        protein: 50,
+        carbs: 15
+    )
+    
+    static let orderItems = [orderItemOne, orderItemTwo, orderItemThree]
 }
