@@ -19,7 +19,7 @@ struct OrderView: View {
                     }
                     .onDelete(perform: viewModel.deleteItems)
                 }
-                .listStyle(PlainListStyle())
+                .listStyle(.plain)
                 
                 Button {
                     print("Order placed")
