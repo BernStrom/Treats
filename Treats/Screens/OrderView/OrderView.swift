@@ -8,10 +8,32 @@
 import SwiftUI
 
 struct OrderView: View {
+    @StateObject var viewModel = OrderViewModel()
+    
     var body: some View {
         NavigationView {
-            Text("Order")
-                .navigationTitle("🧾 Order")
+            VStack {
+                List {
+                    ForEach(viewModel.orderItems) { treat in
+                        TreatListCell(treat: treat)
+                    }
+                    .onDelete(perform: viewModel.deleteItems)
+                }
+                .listStyle(PlainListStyle())
+                
+                Button {
+                    print("Order placed")
+                } label: {
+                    Label("$30.97 - Place Order", systemImage: "bag.badge.plus")
+                        .font(.callout.weight(.semibold))
+                }
+                .buttonStyle(.bordered)
+                .controlSize(.large)
+                .buttonBorderShape(.roundedRectangle(radius: 12))
+                .tint(Color("AccentColor"))
+                .padding(.bottom, 25)
+            }
+            .navigationTitle("🧾 Order")
         }
     }
 }
