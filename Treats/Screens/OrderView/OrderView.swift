@@ -12,26 +12,35 @@ struct OrderView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                List {
-                    ForEach(viewModel.orderItems) { treat in
-                        TreatListCell(treat: treat)
+            ZStack {
+                VStack {
+                    List {
+                        ForEach(viewModel.orderItems) { treat in
+                            TreatListCell(treat: treat)
+                        }
+                        .onDelete(perform: viewModel.deleteItems)
                     }
-                    .onDelete(perform: viewModel.deleteItems)
+                    .listStyle(.plain)
+                    
+                    Button {
+                        print("Order placed")
+                    } label: {
+                        Label("$30.97 - Place Order", systemImage: "bag.badge.plus")
+                            .font(.callout.weight(.semibold))
+                    }
+                    .buttonStyle(.bordered)
+                    .controlSize(.large)
+                    .buttonBorderShape(.roundedRectangle(radius: 12))
+                    .tint(Color("AccentColor"))
+                    .padding(.bottom, 25)
                 }
-                .listStyle(.plain)
                 
-                Button {
-                    print("Order placed")
-                } label: {
-                    Label("$30.97 - Place Order", systemImage: "bag.badge.plus")
-                        .font(.callout.weight(.semibold))
+                if viewModel.orderItems.isEmpty {
+                    EmptyState(
+                        imageName: "empty-order",
+                        message: "You have no items in your order.\nLets add a treat or two to satiate those cravings!"
+                    )
                 }
-                .buttonStyle(.bordered)
-                .controlSize(.large)
-                .buttonBorderShape(.roundedRectangle(radius: 12))
-                .tint(Color("AccentColor"))
-                .padding(.bottom, 25)
             }
             .navigationTitle("🧾 Order")
         }
