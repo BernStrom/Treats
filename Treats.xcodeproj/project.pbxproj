@@ -24,6 +24,7 @@
 		2DB8501E28B3774F009C58CE /* TreatsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8501D28B3774F009C58CE /* TreatsListView.swift */; };
 		2DB8502028B37760009C58CE /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8501F28B37760009C58CE /* AccountView.swift */; };
 		2DB8502228B37772009C58CE /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB8502128B37772009C58CE /* OrderView.swift */; };
+		2DCB754B28BDE33D00792B5C /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCB754A28BDE33D00792B5C /* EmptyState.swift */; };
 		2DD8EE9B28B738E700FC7ECA /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD8EE9A28B738E700FC7ECA /* RemoteImage.swift */; };
 		2DEFC4B428B9D377006C236D /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFC4B328B9D377006C236D /* XDismissButton.swift */; };
 		2DF4956D28B5D7330005728B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4956C28B5D7330005728B /* Alert.swift */; };
@@ -49,6 +50,7 @@
 		2DB8501D28B3774F009C58CE /* TreatsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatsListView.swift; sourceTree = "<group>"; };
 		2DB8501F28B37760009C58CE /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		2DB8502128B37772009C58CE /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		2DCB754A28BDE33D00792B5C /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		2DD8EE9A28B738E700FC7ECA /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		2DEFC4B328B9D377006C236D /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		2DF4956C28B5D7330005728B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2DCB754928BDE20500792B5C /* Empty States */ = {
+			isa = PBXGroup;
+			children = (
+				2DCB754A28BDE33D00792B5C /* EmptyState.swift */,
+			);
+			path = "Empty States";
+			sourceTree = "<group>";
+		};
 		2DD8EE9C28B7433B00FC7ECA /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +145,7 @@
 		2DD8EE9E28B7436C00FC7ECA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2DCB754928BDE20500792B5C /* Empty States */,
 				2DEFC4B228B9D361006C236D /* Buttons */,
 				2DD8EEA728B7464500FC7ECA /* Loader */,
 				2DD8EEA628B745E200FC7ECA /* Image */,
@@ -307,6 +318,7 @@
 				2D91C20828B4A988008D688A /* TRError.swift in Sources */,
 				2DB8501E28B3774F009C58CE /* TreatsListView.swift in Sources */,
 				2DF4957128B5E9760005728B /* LoadingView.swift in Sources */,
+				2DCB754B28BDE33D00792B5C /* EmptyState.swift in Sources */,
 				2DD8EE9B28B738E700FC7ECA /* RemoteImage.swift in Sources */,
 				2D91C20A28B4DACF008D688A /* TreatsListViewModel.swift in Sources */,
 				2D11D94328BCA0A80084B51F /* OrderViewModel.swift in Sources */,
