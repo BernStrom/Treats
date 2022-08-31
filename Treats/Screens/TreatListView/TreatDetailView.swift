@@ -10,6 +10,7 @@ import SwiftUI
 struct TreatDetailView: View {
     let treat: Treat
     @Binding var isShowingDetailView: Bool
+    @EnvironmentObject var order: Order
     
     var body: some View {
         VStack {
@@ -36,7 +37,8 @@ struct TreatDetailView: View {
             Spacer()
             
             Button {
-                print("tapped")
+                order.add(treat)
+                isShowingDetailView = false
             } label: {
                 Label("$\(treat.price, specifier: "%.2f") - Add To Order", systemImage: "cart.badge.plus")
                     .font(.callout.weight(.semibold))
