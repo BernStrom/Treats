@@ -25,7 +25,7 @@ struct OrderView: View {
                     Button {
                         print("Order placed")
                     } label: {
-                        Label("$30.97 - Place Order", systemImage: "bag.badge.plus")
+                        Label("\(order.totalPrice, specifier: "%.2f") - Place Order", systemImage: "bag.badge.plus")
                             .font(.callout.weight(.semibold))
                     }
                     .buttonStyle(.bordered)

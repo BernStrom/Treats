@@ -10,6 +10,10 @@ import Foundation
 final class Order: ObservableObject {
     @Published var items = [Treat]()
     
+    var totalPrice: Double {
+        items.reduce(0) { $0 + $1.price }
+    }
+    
     func add(_ treat: Treat) {
         items.append(treat)
     }
