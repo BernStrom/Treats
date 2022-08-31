@@ -8,17 +8,17 @@
 import SwiftUI
 
 struct OrderView: View {
-    @StateObject var viewModel = OrderViewModel()
+    @EnvironmentObject var order: Order
     
     var body: some View {
         NavigationView {
             ZStack {
                 VStack {
                     List {
-                        ForEach(viewModel.orderItems) { treat in
+                        ForEach(order.items) { treat in
                             TreatListCell(treat: treat)
                         }
-                        .onDelete(perform: viewModel.deleteItems)
+                        .onDelete(perform: order.deleteItems)
                     }
                     .listStyle(.plain)
                     
@@ -35,7 +35,7 @@ struct OrderView: View {
                     .padding(.bottom, 25)
                 }
                 
-                if viewModel.orderItems.isEmpty {
+                if order.items.isEmpty {
                     EmptyState(
                         imageName: "empty-order",
                         message: "You have no items in your order.\nLets add a treat or two to satiate those cravings!"
