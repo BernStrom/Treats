@@ -16,7 +16,7 @@ struct TreatListCell: View {
                 .scaledToFit()
                 .frame(width: 120, height: 90)
                 .cornerRadius(8)
-            
+
             VStack(alignment: .leading, spacing: 5) {
                 Text(treat.name)
                     .font(.title2.weight(.medium))
