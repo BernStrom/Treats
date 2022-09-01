@@ -28,10 +28,7 @@ struct OrderView: View {
                         Label("\(order.totalPrice, specifier: "%.2f") - Place Order", systemImage: "bag.badge.plus")
                             .font(.callout.weight(.semibold))
                     }
-                    .buttonStyle(.bordered)
-                    .controlSize(.large)
-                    .buttonBorderShape(.roundedRectangle(radius: 12))
-                    .tint(Color("AccentColor"))
+                    .modifier(StandardButtonStyle())
                     .padding(.bottom, 25)
                 }
                 

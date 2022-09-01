@@ -43,10 +43,7 @@ struct TreatDetailView: View {
                 Label("$\(treat.price, specifier: "%.2f") - Add To Order", systemImage: "cart.badge.plus")
                     .font(.callout.weight(.semibold))
             }
-            .buttonStyle(.bordered)
-            .controlSize(.large)
-            .buttonBorderShape(.roundedRectangle(radius: 12))
-            .tint(Color("AccentColor"))
+            .modifier(StandardButtonStyle())
             .padding(.bottom, 30)
         }
         .frame(width: 300, height: 525)
