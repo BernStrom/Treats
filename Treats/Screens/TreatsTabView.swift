@@ -8,34 +8,34 @@
 import SwiftUI
 
 struct TreatsTabView: View {
+    @EnvironmentObject var order: Order
+    
     var body: some View {
         TabView {
             TreatsListView()
                 .tabItem {
-                    Image(systemName: "house")
+                    Label("Home", systemImage: "house")
                         .environment(\.symbolVariants, .none)
-                    Text("Home")
                 }
             
             AccountView()
                 .tabItem {
-                    Image(systemName: "person")
+                    Label("Account", systemImage: "person")
                         .environment(\.symbolVariants, .none)
-                    Text("Account")
                 }
             
             OrderView()
                 .tabItem {
-                    Image(systemName: "bag")
+                    Label("Order", systemImage: "bag")
                         .environment(\.symbolVariants, .none)
-                    Text("Order")
                 }
+                .badge(order.items.count)
         }
     }
 }
 
 struct TreatsTabView_Previews: PreviewProvider {
     static var previews: some View {
-        TreatsTabView()
+        TreatsTabView().environmentObject(Order())
     }
 }
