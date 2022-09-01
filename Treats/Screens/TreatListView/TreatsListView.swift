@@ -20,12 +20,11 @@ struct TreatsListView: View {
                             viewModel.isShowingDetailView = true
                         }
                 }
+                .listStyle(.plain)
                 .navigationTitle("🥞 treats.")
                 .disabled(viewModel.isShowingDetailView)
             }
-            .onAppear {
-                viewModel.getTreats()
-            }
+            .onAppear(perform: viewModel.getTreats)
             .blur(radius: viewModel.isShowingDetailView ? 20 : 0)
             
             if viewModel.isShowingDetailView {
