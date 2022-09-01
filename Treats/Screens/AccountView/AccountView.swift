@@ -9,6 +9,11 @@ import SwiftUI
 
 struct AccountView: View {
     @StateObject var viewModel = AccountViewModel()
+    @FocusState private var focusedTextField: FormTextField?
+    
+    enum FormTextField {
+        case firstName, lastName, email
+    }
     
     var body: some View {
         NavigationView {
@@ -16,15 +21,24 @@ struct AccountView: View {
                 Section("Personal Info") {
                     TextField("First Name", text: $viewModel.user.firstName)
                         .textContentType(.givenName)
+                        .focused($focusedTextField, equals: .firstName)
+                        .onSubmit { focusedTextField = .lastName }
+                        .submitLabel(.next)
                     
                     TextField("Last Name", text: $viewModel.user.lastName)
                         .textContentType(.familyName)
+                        .focused($focusedTextField, equals: .lastName)
+                        .onSubmit { focusedTextField = .email }
+                        .submitLabel(.next)
                     
                     TextField("Email", text: $viewModel.user.email)
                         .textContentType(.emailAddress)
                         .keyboardType(.emailAddress)
                         .textInputAutocapitalization(.none)
                         .disableAutocorrection(true)
+                        .focused($focusedTextField, equals: .email)
+                        .onSubmit { focusedTextField = nil }
+                        .submitLabel(.continue)
                     
                     DatePicker("Birthday", selection: $viewModel.user.birthdate, displayedComponents: .date)
                     
@@ -38,6 +52,12 @@ struct AccountView: View {
                     Toggle("Frequent Refills", isOn: $viewModel.user.frequentRefills)
                 }
                 .toggleStyle(SwitchToggleStyle(tint: Color("AccentColor")))
+            }
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
+                    Button("Dismiss") { focusedTextField = nil }
+                }
             }
             .navigationTitle("🎅 Account")
         }
