@@ -39,7 +39,7 @@ struct OrderView: View {
                     )
                 }
             }
-            .navigationTitle("🧾 Order")
+            .navigationTitle("🧾 order.")
         }
     }
 }

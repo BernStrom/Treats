@@ -64,7 +64,7 @@ struct AccountView: View {
                     Button("Dismiss") { focusedTextField = nil }
                 }
             }
-            .navigationTitle("🎅 Account")
+            .navigationTitle("🎅 account.")
         }
         .onAppear(perform: viewModel.retrieveUser)
         .alert(item: $viewModel.alertItem) { alertItem in
