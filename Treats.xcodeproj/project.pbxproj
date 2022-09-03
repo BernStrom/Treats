@@ -30,6 +30,7 @@
 		2DEFC4B428B9D377006C236D /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEFC4B328B9D377006C236D /* XDismissButton.swift */; };
 		2DF4956D28B5D7330005728B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4956C28B5D7330005728B /* Alert.swift */; };
 		2DF4957128B5E9760005728B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF4957028B5E9760005728B /* LoadingView.swift */; };
+		2DFCA57D28C368B20025C33D /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFCA57C28C368B20025C33D /* DateExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		2DEFC4B328B9D377006C236D /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
 		2DF4956C28B5D7330005728B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		2DF4957028B5E9760005728B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		2DFCA57C28C368B20025C33D /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				2D4AA1CD28BB5784000F2E09 /* StringExt.swift */,
+				2DFCA57C28C368B20025C33D /* DateExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				2D91C20228B48C6F008D688A /* Treat.swift in Sources */,
 				2DB8502028B37760009C58CE /* AccountView.swift in Sources */,
 				2D055DFD28B87C5700056808 /* TreatDetailView.swift in Sources */,
+				2DFCA57D28C368B20025C33D /* DateExt.swift in Sources */,
 				2DB8501228B37663009C58CE /* TreatsTabView.swift in Sources */,
 				2D91C20828B4A988008D688A /* TRError.swift in Sources */,
 				2DB8501E28B3774F009C58CE /* TreatsListView.swift in Sources */,
