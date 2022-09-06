@@ -35,4 +35,15 @@ struct MockData {
         protein: 50,
         carbs: 15
     )
+    
+    static let treatNotFound = Treat(
+        id: 0001,
+        name: "Unidentified Treat",
+        description: "Look like this treat is one of the universe's mystery, in which we will never know...",
+        price: 0.00,
+        imageURL: "",
+        calories: 0,
+        protein: 0,
+        carbs: 0
+    )
 }

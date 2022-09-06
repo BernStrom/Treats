@@ -29,7 +29,7 @@ struct TreatsListView: View {
             
             if viewModel.isShowingDetailView {
                 TreatDetailView(
-                    treat: viewModel.selectedTreat ?? MockData.sampleTreat,
+                    treat: viewModel.selectedTreat ?? MockData.treatNotFound,
                     isShowingDetailView: $viewModel.isShowingDetailView
                 )
             }
