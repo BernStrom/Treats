@@ -41,17 +41,16 @@ For you to save your details & preferences, simply navigate to the account view 
 
 ## App preview
 
-<!-- <p>
-    <img src="" alt="" width="250">
-    <img src="" alt="" width="250">
-    <img src="" alt="" width="250">
-    <img src="" alt="" width="250">
-    <img src="" alt="" width="250">
-    <img src="" alt="" width="250">
+<p>
+    <img src="https://user-images.githubusercontent.com/65307853/189208884-5cb671ac-4fcb-404b-85c2-773635d59552.png" alt="Treats menu view dark mode" width="250">
+    <img src="https://user-images.githubusercontent.com/65307853/189209765-b8518991-8bf0-40c2-9e8d-ca57344cc5d0.png" alt="Treats food detail dark mode" width="250">
+    <img src="https://user-images.githubusercontent.com/65307853/189209395-3bf9eb4b-eff8-49e2-bb9f-c135f3e6b37a.png" alt="Treats menu order view dark mode" width="250">
+    <img src="https://user-images.githubusercontent.com/65307853/189211353-23396111-6466-4c22-9e88-f495f19f4093.png" alt="Treats account view with error prompt light mode" width="250">
+    <img src="https://user-images.githubusercontent.com/65307853/189211094-dbab0de7-df4a-4b65-9c7f-caee90cc5422.png" alt="Treats food detail light mode" width="250">
+    <img src="https://user-images.githubusercontent.com/65307853/189211546-b9bc71ea-7404-4168-9929-af15d1700d16.png" alt="Treats empty order view light mode" width="250">
 </p>
 
-
--->
+https://user-images.githubusercontent.com/65307853/189212063-f9719cab-98f7-4cbe-b2f7-4aa4bfdd8930.mp4
 
 ## Trying it yourself
 
