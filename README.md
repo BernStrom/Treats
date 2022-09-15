@@ -30,7 +30,7 @@ For you to save your details & preferences, simply navigate to the account view 
 
 * iOS 15+ button system w/ SF Symbols
 * Adaptable color themes between light & dark mode
-* MVVM (Model-View-ViewModel) Architecture
+* MVVM (Model-View-ViewModel) Design Pattern
 * Image-caching of food item images for faster loading
 * JSON data-fetching through network calls to an API to retrieve the food details
 * Local data persistence & retrieval of user account info & preferences to & from `@AppStorage`   
