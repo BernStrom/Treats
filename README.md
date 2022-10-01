@@ -18,13 +18,11 @@
 
 Treats is a food-ordering app that lets you place orders for appetizers. It comes with an account and order screen where you can edit & save your user details and view your order summary of all item(s) added to order.
 
-Overall, it's functionality is fairly straightforward where you can view a list of food items and tap on each one to view its details, such as a description, nutritional information, and price. You can also add the food item to order through each of their detail pop-up component.
+Overall functionality of the app is fairly straightforward where you can view a list of food items and tap on each one to view its details, such as a description, nutritional information, and price. You can also add the food item to order through each of their detail pop-up component.
 
-All information of the food items such as images, descriptions, prices, etc., are retrieved from an API through making network calls to fetch its JSON data and decoding them to display on screen. Caching of the food images on local device memory are also implemented for faster, subsequent loading of the app. To refine the UX, a loader was implemented with the use of `ProgressView` to indicate to the user that the data is being retrieved and decoded for display on-screen.
+Information of the food items such as images, descriptions, prices, etc. are retrieved from an API through making network calls to fetch its JSON data and decoding them to display on screen. Caching of the food images on local device memory are also implemented for faster, subsequent loading of the app. To refine the UX, a loader will display to indicate to the user that the app is "loading" where data is actually being retrieved and decoded for display on-screen.
 
-Item(s) added to order are shown in the order view where you can see a summary of your order; a list of all item(s) added and total price of your order. In the order view, you can also removed any item(s) you've added simply by swiping slightly left on each food item to display the delete button. You can also use a drag gesture by swiping an item all the way left across the screen. If you have any existing item(s) in the order view, you can also find a button here to place your order. If there are no item(s), an empty view will be displayed showing you that there no items in your order. For simplicity and the personal educational scope of this project, the functionality of the "Place Order" button is not implemented in this app.
-
-For you to save your details & preferences, simply navigate to the account view in the bottom tab bar and fill in your details such as name, email address, birthdate & more. All user details are saved & retrieved locally on device through the use of encoding & decoding to & from `@AppStorage`, all in complete privacy with no data persistance to external databases.
+User account details are saved & retrieved locally on device through the use of encoding & decoding to & from `@AppStorage`, all in complete privacy with no data persistance to externally-hosted databases.
 
 #### - Key features & technologies
 
@@ -41,16 +39,10 @@ For you to save your details & preferences, simply navigate to the account view 
 
 ## App preview
 
-<p>
-    <img src="https://user-images.githubusercontent.com/65307853/189208884-5cb671ac-4fcb-404b-85c2-773635d59552.png" alt="Treats menu view dark mode" width="250">
-    <img src="https://user-images.githubusercontent.com/65307853/189209765-b8518991-8bf0-40c2-9e8d-ca57344cc5d0.png" alt="Treats food detail dark mode" width="250">
-    <img src="https://user-images.githubusercontent.com/65307853/189209395-3bf9eb4b-eff8-49e2-bb9f-c135f3e6b37a.png" alt="Treats menu order view dark mode" width="250">
-    <img src="https://user-images.githubusercontent.com/65307853/189211353-23396111-6466-4c22-9e88-f495f19f4093.png" alt="Treats account view with error prompt light mode" width="250">
-    <img src="https://user-images.githubusercontent.com/65307853/189211094-dbab0de7-df4a-4b65-9c7f-caee90cc5422.png" alt="Treats food detail light mode" width="250">
-    <img src="https://user-images.githubusercontent.com/65307853/189211546-b9bc71ea-7404-4168-9929-af15d1700d16.png" alt="Treats empty order view light mode" width="250">
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/65307853/193384912-62b49268-8e8a-4952-b270-4bcdbb751df6.png" alt="Treats app screenshots">
+    <video src="https://user-images.githubusercontent.com/65307853/189212063-f9719cab-98f7-4cbe-b2f7-4aa4bfdd8930.mp4"></video>
 </p>
-
-https://user-images.githubusercontent.com/65307853/189212063-f9719cab-98f7-4cbe-b2f7-4aa4bfdd8930.mp4
 
 ## Trying it yourself
 
